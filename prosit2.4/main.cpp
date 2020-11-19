@@ -18,13 +18,19 @@ int main()
 	a->envoyer("bonjour c");
 	a->envoyer("bonjour d");
 	a->envoyer("bonjour e");
+
 	a->ajouterRecepteur(d);
+	cout << "----------RECEPTEUR C1----------" << endl;
 	c->ecouter();
+
+	cout << "----------RECEPTEUR D1----------" << endl;
 	d->ecouter();
 	a->envoyer("helloo");
-	cout << "ecoute :" << endl;
-
+	cout << "----------RECEPTEUR C2----------" << endl;
 	c->ecouter();
+
+	cout << "----------RECEPTEUR D2----------" << endl;
 	d->ecouter();
+	delete a,c,d;
 	return 0;
 }

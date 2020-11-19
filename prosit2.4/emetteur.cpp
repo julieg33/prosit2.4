@@ -20,3 +20,8 @@ void Emetteur::ajouterRecepteur(Recepteur* recepteur)
 	m_recepteur.push_back(recepteur);
 }
 
+vector <string> Emetteur::getMessage()
+{
+	return m_message;
+}
+
