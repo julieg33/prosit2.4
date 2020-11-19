@@ -11,11 +11,12 @@ int main()
 
 
 	Emetteur a;
-	Recepteur c ;
-	
-	a.envoyer(c, "bonjour c");
-	a.envoyer(c, "bonjour d");
-	a.envoyer(c, "bonjour e");
+	Recepteur* c = new Recepteur;
+	a.ajouterRecepteur(c);
+	a.envoyer("bonjour c");
+	a.envoyer("bonjour d");
+	a.envoyer("bonjour e");
+	c->ecouter();
 
 	return 0;
 }
