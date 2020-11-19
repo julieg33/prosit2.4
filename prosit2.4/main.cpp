@@ -11,9 +11,11 @@ int main()
 
 
 	Emetteur a;
-	Recepteur b, c;
-	a.diffuser(b, "bonjour b");
-	a.diffuser(c, "bonjour c");
+	Recepteur c ;
+	
+	a.envoyer(c, "bonjour c");
+	a.envoyer(c, "bonjour d");
+	a.envoyer(c, "bonjour e");
 
 	return 0;
 }
