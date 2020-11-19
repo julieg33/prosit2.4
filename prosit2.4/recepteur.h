@@ -9,6 +9,6 @@ public :
 	void getMessage(std::vector<std::string> listeMessage);
 	void ecouter();
 private :
-	std::vector<std::string> l_message;
+	static std::vector<std::string> l_message;
 };
 

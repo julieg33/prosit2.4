@@ -1,6 +1,8 @@
 #include "recepteur.h"
 using namespace std;
 
+vector <string> Recepteur::l_message;
+
 Recepteur::Recepteur()
 {}
 
