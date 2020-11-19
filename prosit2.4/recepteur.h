@@ -10,6 +10,5 @@ public :
 	void ecouter();
 private :
 	std::vector<std::string> l_message;
-
 };
 
